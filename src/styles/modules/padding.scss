@@ -1,0 +1,51 @@
+@mixin p($size) {
+  padding-top: #{$size}px;
+  padding-bottom: #{$size}px;
+  padding-left: #{$size}px;
+  padding-right: #{$size}px;
+}
+
+@mixin ptb($size) {
+  padding-top: #{$size}px;
+  padding-bottom: #{$size}px;
+}
+
+@mixin pt($size) {
+  padding-top: #{$size}px;
+}
+
+@mixin pb($size) {
+  padding-bottom: #{$size}px;
+}
+
+@mixin plr($size) {
+  padding-left: #{$size}px;
+  padding-right: #{$size}px;
+}
+
+@mixin pl($size) {
+  padding-left: #{$size}px;
+}
+
+@mixin pr($size) {
+  padding-right: #{$size}px;
+}
+
+@mixin padding($size) {
+  .p-#{$size} { @include p($size); }
+  .ptb-#{$size} { @include ptb($size); }
+  .pt-#{$size} { @include pt($size); }
+  .pb-#{$size} { @include pb($size); }
+  .plr-#{$size} { @include plr($size); }
+  .pl-#{$size} { @include pl($size); }
+  .pr-#{$size} { @include pr($size); }
+}
+
+@include padding(0);
+@include padding(5);
+@include padding(10);
+@include padding(15);
+@include padding(20);
+@include padding(30);
+@include padding(50);
+@include padding(100);

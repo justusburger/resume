@@ -1,0 +1,52 @@
+@mixin m($size) {
+  margin-top: #{$size}px;
+  margin-bottom: #{$size}px;
+  margin-left: #{$size}px;
+  margin-right: #{$size}px;
+}
+
+@mixin mtb($size) {
+  margin-top: #{$size}px;
+  margin-bottom: #{$size}px;
+}
+
+@mixin mt($size) {
+  margin-top: #{$size}px;
+}
+
+@mixin mb($size) {
+  margin-bottom: #{$size}px;
+}
+
+@mixin mlr($size) {
+  margin-left: #{$size}px;
+  margin-right: #{$size}px;
+}
+
+@mixin ml($size) {
+  margin-left: #{$size}px;
+}
+
+@mixin mr($size) {
+  margin-right: #{$size}px;
+}
+
+@mixin margin($size) {
+  .m-#{$size} { @include m($size); }
+  .mtb-#{$size} { @include mtb($size); }
+  .mt-#{$size} { @include mt($size); }
+  .mb-#{$size} { @include mb($size); }
+  .mlr-#{$size} { @include mlr($size); }
+  .ml-#{$size} { @include ml($size); }
+  .mr-#{$size} { @include mr($size); }
+}
+
+@include margin(-5);
+@include margin(0);
+@include margin(5);
+@include margin(10);
+@include margin(15);
+@include margin(20);
+@include margin(30);
+@include margin(50);
+@include margin(100);

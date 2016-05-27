@@ -1,0 +1,52 @@
+@import "colors";
+
+.skill {
+  padding: 15px;
+  margin: 0 -15px;
+
+  &:nth-child(even) {
+    background: darken($content, 1%);
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: 300;
+    color: #ddd;
+    font-size: 20px;
+  }
+
+  h4 {
+    margin: 0 0 10px 0;
+    font-weight: 300;
+    color: #888;
+    font-size: 13px;
+  }
+
+  .rating {
+    float: right;
+    transition: transform 0.2s ease-out;
+
+    .material-icons {
+      color: $accent;
+      font-size: 20px;
+
+      &.half {
+        opacity: 0.5;
+      }
+
+      &.empty {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &:hover {
+    .rating {
+      transform: scale(1.1);
+    }
+
+    .badge {
+      opacity: 1;
+    }
+  }
+}

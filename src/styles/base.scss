@@ -1,0 +1,38 @@
+@import "modules/profile-image";
+@import "modules/margin";
+@import "modules/padding";
+@import "modules/typography";
+@import "modules/colors";
+@import "modules/skills";
+@import "modules/experience";
+@import "modules/button";
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  background: $background;
+  font-weight: 300;
+}
+
+.main-container {
+  margin: 50px 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  background: $sidebar;
+
+  @media all and (max-width: 767px) {
+    margin: 0;
+  }
+}
+
+.content {
+  background: $content;
+}
+
+.layout-container {
+  max-width: 960px;
+
+  @media all and (max-width: 767px) {
+    padding: 0;
+  }
+}

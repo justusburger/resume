@@ -1,0 +1,54 @@
+@import "colors";
+
+.btn {
+  border-radius: 0;
+  background: none !important;
+  opacity: 0.5;
+  font-weight: 300;
+
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.btn-default {
+    border: solid 1px #fff;
+    color: #fff;
+
+  }
+}
+
+.btn-more {
+  display: inline-block;
+  border: solid 1px $accent;
+  opacity: 0.8;
+  border-radius: 20px;
+  padding: 2px 10px;
+
+  .material-icons {
+    float: left;
+    color: $accent;
+  }
+
+  &:hover {
+    background: $accent;
+
+    .material-icons {
+      color: #fff;
+    }
+  }
+}
+
+.connect {
+  opacity: 1;
+  font-size: 12px;
+  color: $accent;
+  border: solid 1px $accent;
+  margin: 3px 1px;
+
+  &:hover {
+    color: #fff;
+    background: $accent;
+
+  }
+}

@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+.sass-cache
+dist
+app.js
+index.html
+styles.css
+styles.js

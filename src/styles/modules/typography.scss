@@ -1,0 +1,81 @@
+@import "colors";
+
+.title {
+  font-weight: 100;
+  color: $accent;
+  font-size: 60px;
+  margin: 0;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  @media all and (max-width: 767px) {
+    font-size: 40px;
+  }
+}
+
+.sub-title {
+  font-weight: 500;
+  color: $accent;
+  font-size: 30px;
+  margin: 0;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+p {
+  color: #999;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+  text-transform: uppercase;
+  color: $accent;
+  position: relative;
+  margin: 0 0 15px 0;
+
+  .material-icons {
+    font-size: 25px;
+    float: left;
+    background: $accent;
+    color: #fff;
+    border-radius: 50%;
+    padding: 3px;
+    margin: -3px 10px 0 0;
+  }
+
+  .rule {
+    border-top: solid 1px #4c4c4c;
+    border-bottom: solid 1px #777;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -2px;
+  }
+}
+
+.section-title-content {
+  display: inline-block;
+  background: $content;
+  padding: 0 10px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+a {
+  cursor: pointer;
+  color: $accent;
+
+  &:hover {
+    color: darken($accent, 5%);
+
+  }
+}
+
+.badge {
+  font-size: 10px;
+  background: none;
+  opacity: 0.2;
+  font-weight: 100;
+  transition: opacity 0.2s ease-out;
+  color: #999;
+  border: solid 1px #999;
+  text-shadow: none;
+  box-shadow: none;
+}
