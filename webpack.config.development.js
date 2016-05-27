@@ -5,6 +5,9 @@ module.exports = function(PATHS) {
     entry: {
       index: PATHS.index
     },
+    output: {
+      publicPath: '/'
+    },
     module: {
       loaders: [
         {test: /\.scss$/, loaders: ['style', 'css', 'postcss', 'sass'], include: PATHS.src}

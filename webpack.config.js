@@ -9,7 +9,7 @@ const PATHS = {
   src: path.join(__dirname, 'src'),
   app: path.join(__dirname, 'src/index.js'),
   index: path.join(__dirname, 'src/index.html'),
-  public: path.join(__dirname, 'public'),
+  public: path.join(__dirname, 'public/'),
   nodeModules: path.join(__dirname, 'node_modules'),
   styles: [
     path.join(__dirname, 'src/styles/base.scss')
@@ -23,7 +23,6 @@ let common = {
   },
   output: {
     path: PATHS.public,
-    publicPath: '/',
     filename: '[name].js'
   },
   module: {

@@ -1,36 +1,23 @@
 {
   "name": "justusburger.co.za",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Professional online resume",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack -p",
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "serve": "serve -p 3000 public",
-    "build-serve": "npm run build && npm run serve"
+    "build-serve": "npm run build && npm run serve",
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://justusburger@bitbucket.org/teampsypher/justusburger.co.za.git"
+    "url": "git+https://github.com/justusburger/resume.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/teampsypher/justusburger.co.za#readme",
+  "homepage": "justusburger.co.za",
   "dependencies": {
-    "bootstrap": "^3.3.6",
-    "bootstrap-grid": "^2.0.1",
-    "expose-loader": "^0.7.1",
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-newer": "^1.2.0",
-    "grunt-string-replace": "^1.2.1",
-    "jquery": "^2.2.4",
-    "load-grunt-tasks": "^3.5.0"
+    "jquery": "^2.2.4"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
@@ -44,18 +31,16 @@
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "gh-pages": "^0.11.0",
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.17.0",
-    "ignore-loader": "^0.1.1",
     "less-loader": "^2.2.3",
     "node-sass": "^3.7.0",
-    "null-loader": "^0.1.1",
     "postcss-loader": "^0.9.1",
     "precss": "^1.4.0",
     "sass-loader": "^3.2.0",
     "serve": "^1.4.0",
     "style-loader": "^0.13.1",
-    "to-string-loader": "^1.1.4",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
     "webpack-merge": "^0.13.0",
