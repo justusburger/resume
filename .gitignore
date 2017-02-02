@@ -4,3 +4,5 @@ public/app.js
 public/index.html
 public/styles.css
 public/styles.js
+.idea
+node_modules
